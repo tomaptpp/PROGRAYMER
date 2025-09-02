@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROGRAYMER</title>
+    <link rel="stylesheet" href="Python.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación superior -->
+  <header>
+      <div><a href="../index/index.html" class="logo">PROGRAYMER</a></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index/index.html">Inicio</a></li>
+        <li><a href="../contenidorec/contenido.html">Contenido recomendado</a></li>
+        <li><a>Lenguajes</a>
+          <ul class="menu-ver">
+            <li><a href="../lenguajes/PSeint.html">PSeint</a></li>
+            <li><a href="../lenguajes/Python.html">Python</a></li>
+            <li><a href="../lenguajes/HTML.html">HTML</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="">Comunidad</a>
+          <ul class="menu-ver">
+            <li><a href="">Codigos Comunidad</a></li>
+          </ul>
+        </li>
+        <li><a href="">Inicio Sesion</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Contenido principal -->
+    <main class="contenedor">
+      <section class="text">
+        <h1>Python</h1>
+
+<h2>¿Qué es Python?</h2>
+<p><strong>Python</strong> es un lenguaje de programación de alto nivel, interpretado y de propósito general, creado por Guido van Rossum y lanzado por primera vez en 1991. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.</p>
+
+<p>Tiene estructuras de datos de alto nivel eficientes y un simple pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico, junto a su naturaleza interpretada lo convierten en un lenguaje ideal para scripting y desarrollo rápido de aplicaciones.</p>
+
+<p><strong>¿Sabías que?</strong> Python evoluciona continuamente para satisfacer las necesidades de los desarrolladores modernos. Las versiones recientes, como Python 3.10 y 3.11, han introducido importantes mejoras de rendimiento y nuevas funciones.</p>
+
+<h2>Características Principales de Python</h2>
+
+<h3>Características técnicas:</h3>
+<ul>
+    <li><strong>Lenguaje interpretado</strong>: No necesita compilación previa, se ejecuta directamente</li>
+    <li><strong>Tipado dinámico</strong>: Las variables no requieren declaración de tipo explícita</li>
+    <li><strong>Fuertemente tipado</strong>: Aunque dinámico, Python es estricto con los tipos de datos</li>
+    <li><strong>Multiplataforma</strong>: Funciona en Windows, macOS, Linux y otros sistemas operativos</li>
+    <li><strong>Sintaxis clara y legible</strong>: Prioriza la legibilidad del código</li>
+    <li><strong>Gestión automática de memoria</strong>: Incluye recolector de basura automático</li>
+    <li><strong>Extensible</strong>: Permite integración con código C/C++ y otros lenguajes</li>
+</ul>
+
+<h3>Filosofía del lenguaje:</h3>
+<p>Python sigue el principio de <strong>"El Zen de Python"</strong>, que incluye máximas como:</p>
+<ul>
+    <li>"Bello es mejor que feo"</li>
+    <li>"Explícito es mejor que implícito"</li>
+    <li>"Simple es mejor que complejo"</li>
+    <li>"La legibilidad cuenta"</li>
+    <li>"Debería haber una forma obvia de hacerlo"</li>
+</ul>
+
+<h2>¿Para qué sirve Python?</h2>
+
+<p>Python es un lenguaje de propósito general, lo que significa que se puede utilizar para crear una variedad de programas diferentes y no está especializado en ningún problema específico.</p>
+
+<h3>Principales aplicaciones:</h3>
+<ul>
+    <li><strong>Desarrollo Web</strong>: Frameworks como Django, Flask y FastAPI</li>
+    <li><strong>Ciencia de Datos</strong>: Análisis con pandas, NumPy, SciPy</li>
+    <li><strong>Inteligencia Artificial</strong>: Machine Learning con TensorFlow, PyTorch</li>
+    <li><strong>Automatización</strong>: Scripts y herramientas de automatización</li>
+    <li><strong>Desarrollo de APIs</strong>: Servicios web y microservicios</li>
+    <li><strong>Aplicaciones Desktop</strong>: GUI con Tkinter, PyQt, Kivy</li>
+    <li><strong>Análisis financiero</strong>: Modelado y análisis de mercados</li>
+    <li><strong>Bioinformática</strong>: Análisis de datos genómicos</li>
+    <li><strong>Juegos</strong>: Desarrollo con Pygame</li>
+    <li><strong>DevOps</strong>: Automatización de infraestructura</li>
+</ul>
+
+<h2>Sintaxis y Características del Código</h2>
+
+<h3>Ejemplo básico de sintaxis:</h3>
+<pre><code># Programa básico en Python
+def saludar(nombre):
+    """Función que saluda a una persona"""
+    return f"¡Hola, {nombre}!"
+
+# Variables y tipos de datos
+nombre = "Python"
+version = 3.12
+es_genial = True
+
+# Estructura de control
+if es_genial:
+    print(saludar(nombre))
+    print(f"Versión: {version}")
+
+# Lista y bucle
+lenguajes = ["Python", "JavaScript", "Java", "C++"]
+for lenguaje in lenguajes:
+    print(f"- {lenguaje}")
+
+# Diccionario
+desarrollador = {
+    "nombre": "Guido van Rossum",
+    "creacion": 1991,
+    "filosofia": "Simple es mejor que complejo"
+}
+
+print(f"Creado por: {desarrollador['nombre']}")
+</code></pre>
+
+<h3>Características distintivas del código Python:</h3>
+<ul>
+    <li><strong>Indentación significativa</strong>: Los bloques de código se definen por indentación, no por llaves</li>
+    <li><strong>Sin punto y coma</strong>: No es necesario terminar las líneas con ;</li>
+    <li><strong>Declaración implícita de variables</strong>: Las variables se crean al asignarles un valor</li>
+    <li><strong>Comentarios con #</strong>: Líneas de comentario comienzan con #</li>
+    <li><strong>Strings flexibles</strong>: Comillas simples, dobles o triples para cadenas</li>
+    <li><strong>Listas y diccionarios nativos</strong>: Estructuras de datos incorporadas</li>
+    <li><strong>Comprensiones</strong>: Sintaxis concisa para crear listas, diccionarios y conjuntos</li>
+</ul>
+
+<h2>Uso Profesional de Python</h2>
+
+<h3>En la industria tecnológica:</h3>
+<p>Empresas como Google, Netflix, Instagram, Spotify, Dropbox, Pinterest, Reddit, Quora y YouTube utilizan Python extensivamente en sus sistemas de producción. Google lo ha adoptado como uno de sus tres lenguajes oficiales junto con Java y C++.</p>
+
+<h3>En ciencia de datos y análisis:</h3>
+<p>Python es el lenguaje más popular para análisis de datos, visualización, machine learning y data science. Empresas como Netflix lo usan para sistemas de recomendación, Tesla para análisis de datos de vehículos autónomos, y bancos para análisis de riesgo financiero.</p>
+
+<h3>En desarrollo web:</h3>
+<p>Instagram (Django), Pinterest (Django/Flask), Dropbox (Pyramid) y muchas startups utilizan frameworks Python para crear aplicaciones web robustas y escalables.</p>
+
+<h3>En automatización y DevOps:</h3>
+<p>Scripts de automatización, herramientas de administración de sistemas, CI/CD pipelines, infraestructura como código con herramientas como Ansible, SaltStack y fabric.</p>
+
+<h3>En investigación académica:</h3>
+<p>Ampliamente usado en investigación científica, análisis estadístico, bioinformática, física computacional, astronomía y modelado matemático en universidades y centros de investigación.</p>
+
+<h2>Bibliotecas y Frameworks Populares</h2>
+
+<h3>Desarrollo Web:</h3>
+<ul>
+    <li><strong>Django</strong>: Framework web completo con ORM, admin panel y sistema de autenticación</li>
+    <li><strong>Flask</strong>: Microframework minimalista y flexible para proyectos pequeños a medianos</li>
+    <li><strong>FastAPI</strong>: Framework moderno para APIs con validación automática y documentación</li>
+    <li><strong>Pyramid</strong>: Framework web escalable para aplicaciones complejas</li>
+    <li><strong>Bottle</strong>: Microframework muy ligero para aplicaciones simples</li>
+</ul>
+
+<h3>Ciencia de Datos:</h3>
+<ul>
+    <li><strong>NumPy</strong>: Computación numérica, arrays multidimensionales y álgebra lineal</li>
+    <li><strong>pandas</strong>: Manipulación y análisis de datos estructurados</li>
+    <li><strong>matplotlib</strong>: Visualización de datos estática</li>
+    <li><strong>seaborn</strong>: Visualización estadística basada en matplotlib</li>
+    <li><strong>SciPy</strong>: Algoritmos científicos y computación técnica</li>
+    <li><strong>Plotly</strong>: Visualización interactiva</li>
+    <li><strong>Bokeh</strong>: Visualización web interactiva</li>
+</ul>
+
+<h3>Machine Learning e IA:</h3>
+<ul>
+    <li><strong>scikit-learn</strong>: Algoritmos de machine learning tradicional</li>
+    <li><strong>TensorFlow</strong>: Deep learning y redes neuronales de Google</li>
+    <li><strong>PyTorch</strong>: Deep learning y investigación en IA de Meta</li>
+    <li><strong>Keras</strong>: API de alto nivel para redes neuronales</li>
+    <li><strong>XGBoost</strong>: Gradient boosting optimizado</li>
+    <li><strong>OpenCV</strong>: Visión por computadora</li>
+    <li><strong>NLTK/spaCy</strong>: Procesamiento de lenguaje natural</li>
+</ul>
+
+<h3>Desarrollo de GUI y Desktop:</h3>
+<ul>
+    <li><strong>Tkinter</strong>: Biblioteca gráfica incluida por defecto en Python</li>
+    <li><strong>PyQt/PySide</strong>: Interfaces gráficas profesionales multiplataforma</li>
+    <li><strong>Kivy</strong>: Aplicaciones multiplataforma y móviles</li>
+    <li><strong>wxPython</strong>: GUI nativa para cada plataforma</li>
+    <li><strong>Dear PyGui</strong>: GUI moderna para aplicaciones de datos</li>
+</ul>
+
+<h3>Testing y Calidad de Código:</h3>
+<ul>
+    <li><strong>pytest</strong>: Framework de testing más popular</li>
+    <li><strong>unittest</strong>: Framework de testing incluido</li>
+    <li><strong>black</strong>: Formateador de código automático</li>
+    <li><strong>flake8</strong>: Linter para detectar errores</li>
+    <li><strong>mypy</strong>: Type checker estático</li>
+</ul>
+
+<h2>Ventajas de Python</h2>
+
+<h3>Para desarrolladores:</h3>
+<ul>
+    <li><strong>Fácil de aprender</strong>: Sintaxis intuitiva similar al inglés</li>
+    <li><strong>Productividad alta</strong>: Desarrollo rápido con menos líneas de código</li>
+    <li><strong>Comunidad activa</strong>: Millones de desarrolladores y recursos disponibles</li>
+    <li><strong>Versatilidad</strong>: Útil desde scripts simples hasta sistemas complejos</li>
+    <li><strong>Bibliotecas extensas</strong>: PyPI con más de 400,000 paquetes disponibles</li>
+    <li><strong>Multiplataforma</strong>: Código portable entre Windows, macOS y Linux</li>
+    <li><strong>Interpretado</strong>: No necesita compilación, desarrollo iterativo rápido</li>
+    <li><strong>Tipado dinámico</strong>: Menos código boilerplate</li>
+</ul>
+
+<h3>Para empresas:</h3>
+<ul>
+    <li><strong>Menor tiempo de desarrollo</strong>: Prototipado y desarrollo rápido</li>
+    <li><strong>Mantenimiento simplificado</strong>: Código más legible y autodocumentado</li>
+    <li><strong>Talento disponible</strong>: Gran cantidad de desarrolladores Python en el mercado</li>
+    <li><strong>Código abierto</strong>: Sin costos de licencia</li>
+    <li><strong>Escalabilidad</strong>: Desde scripts personales hasta sistemas empresariales</li>
+    <li><strong>Integración</strong>: Fácil integración con sistemas existentes</li>
+    <li><strong>Comunidad empresarial</strong>: Soporte de grandes corporaciones</li>
+</ul>
+
+<h2>Limitaciones de Python</h2>
+
+<h3>Consideraciones técnicas:</h3>
+<ul>
+    <li><strong>Velocidad de ejecución</strong>: Más lento que lenguajes compilados como C++, Java o Go</li>
+    <li><strong>Global Interpreter Lock (GIL)</strong>: Limitaciones en threading para tareas CPU-intensivas</li>
+    <li><strong>Consumo de memoria</strong>: Mayor uso de memoria que lenguajes compilados</li>
+    <li><strong>Desarrollo móvil</strong>: No es la primera opción para apps móviles nativas</li>
+    <li><strong>Diseño de navegadores</strong>: No se ejecuta nativamente en navegadores web</li>
+    <li><strong>Bases de datos</strong>: Access layers pueden ser más lentos que SQL nativo</li>
+    <li><strong>Runtime errors</strong>: Algunos errores solo se detectan en tiempo de ejecución</li>
+</ul>
+
+<h3>Casos donde otras opciones pueden ser mejores:</h3>
+<ul>
+    <li><strong>Sistemas en tiempo real</strong>: C/C++ para latencia ultra-baja</li>
+    <li><strong>Aplicaciones móviles nativas</strong>: Swift para iOS, Kotlin para Android</li>
+    <li><strong>Programación de sistemas</strong>: C/C++/Rust para drivers y sistemas operativos</li>
+    <li><strong>Juegos AAA</strong>: C++ para máximo rendimiento gráfico</li>
+    <li><strong>Aplicaciones web frontend</strong>: JavaScript/TypeScript son necesarios</li>
+    <li><strong>Blockchain y criptomonedas</strong>: Solidity, Rust o Go son más comunes</li>
+</ul>
+
+<h2>Instalación y Configuración</h2>
+
+<h3>Instalación básica:</h3>
+<h4>Windows:</h4>
+<ul>
+    <li>Descargar desde <strong>python.org</strong> (recomendado)</li>
+    <li>Microsoft Store (versión simplificada)</li>
+    <li>Chocolatey: <code>choco install python</code></li>
+    <li>Anaconda (incluye muchas bibliotecas científicas)</li>
+</ul>
+
+<h4>macOS:</h4>
+<ul>
+    <li>Incluido por defecto (versión antigua)</li>
+    <li>Homebrew: <code>brew install python</code> (recomendado)</li>
+    <li>Descargar desde python.org</li>
+    <li>pyenv para gestionar múltiples versiones</li>
+</ul>
+
+<h4>Linux:</h4>
+<ul>
+    <li>Ubuntu/Debian: <code>sudo apt install python3 python3-pip</code></li>
+    <li>CentOS/RHEL: <code>sudo yum install python3 python3-pip</code></li>
+    <li>Arch: <code>sudo pacman -S python python-pip</code></li>
+    <li>Fedora: <code>sudo dnf install python3 python3-pip</code></li>
+</ul>
+
+<h3>Herramientas de desarrollo recomendadas:</h3>
+
+<h4>IDEs y Editores:</h4>
+<ul>
+    <li><strong>PyCharm</strong>: IDE completo de JetBrains (profesional y community)</li>
+    <li><strong>Visual Studio Code</strong>: Editor ligero con extensión Python</li>
+    <li><strong>Sublime Text</strong>: Editor rápido con plugins Python</li>
+    <li><strong>Vim/Neovim</strong>: Para usuarios avanzados de terminal</li>
+    <li><strong>Spyder</strong>: IDE científico incluido en Anaconda</li>
+</ul>
+
+<h4>Gestores de paquetes:</h4>
+<ul>
+    <li><strong>pip</strong>: Gestor de paquetes incluido por defecto</li>
+    <li><strong>conda</strong>: Gestor de paquetes y entornos de Anaconda</li>
+    <li><strong>poetry</strong>: Gestor moderno de dependencias</li>
+    <li><strong>pipenv</strong>: Combina pip y virtualenv</li>
+</ul>
+
+<h4>Entornos virtuales:</h4>
+<ul>
+    <li><strong>venv</strong>: Incluido en Python 3.3+</li>
+    <li><strong>virtualenv</strong>: Versión externa más completa</li>
+    <li><strong>conda env</strong>: Entornos de Anaconda</li>
+    <li><strong>pyenv</strong>: Gestión de versiones de Python</li>
+</ul>
+
+<h4>Notebooks y desarrollo interactivo:</h4>
+<ul>
+    <li><strong>Jupyter Notebook</strong>: Notebooks interactivos clásicos</li>
+    <li><strong>JupyterLab</strong>: Entorno de desarrollo más avanzado</li>
+    <li><strong>Google Colab</strong>: Notebooks en la nube gratuitos</li>
+    <li><strong>IPython</strong>: Shell interactivo mejorado</li>
+</ul>
+
+<h2>Versiones de Python</h2>
+
+<h3>Historia de versiones:</h3>
+<h4>Python 2 vs Python 3:</h4>
+<ul>
+    <li><strong>Python 2.7</strong>: Última versión de Python 2, obsoleta desde enero 2020</li>
+    <li><strong>Python 3.x</strong>: Versión actual y activa con mejoras continuas</li>
+    <li><strong>Diferencias clave</strong>: print como función, strings Unicode por defecto, división mejorada</li>
+</ul>
+
+<h4>Versiones recientes de Python 3:</h4>
+<ul>
+    <li><strong>Python 3.8</strong>: Walrus operator (:=), argumentos posicionales</li>
+    <li><strong>Python 3.9</strong>: Operadores de diccionario mejorados (|), type hints generics</li>
+    <li><strong>Python 3.10</strong>: Pattern matching con match/case, mensajes de error mejorados</li>
+    <li><strong>Python 3.11</strong>: Mejoras significativas de rendimiento (10-60% más rápido)</li>
+    <li><strong>Python 3.12</strong>: Syntax mejorada, f-strings más flexibles, mejores mensajes de error</li>
+    <li><strong>Python 3.13</strong>: En desarrollo, experimental free-threading (sin GIL)</li>
+</ul>
+
+<h3>Ciclo de lanzamiento:</h3>
+<ul>
+    <li><strong>Calendario</strong>: Nueva versión menor cada 12 meses</li>
+    <li><strong>Soporte</strong>: 5 años de soporte para cada versión</li>
+    <li><strong>Actualizaciones</strong>: Parches de seguridad y bug fixes regulares</li>
+</ul>
+
+<h2>Comunidad y Ecosistema</h2>
+
+<p>Los desarrolladores pueden utilizar Python fácilmente con otros lenguajes de programación conocidos, como Java, C y C++. La comunidad activa de Python incluye millones de desarrolladores alrededor del mundo que prestan su apoyo.</p>
+
+<h3>Estadísticas de la comunidad:</h3>
+<ul>
+    <li><strong>Desarrolladores</strong>: Más de 15 millones de usuarios activos</li>
+    <li><strong>PyPI</strong>: Más de 400,000 paquetes disponibles</li>
+    <li><strong>GitHub</strong>: Segundo lenguaje más usado</li>
+    <li><strong>Stack Overflow</strong>: Una de las tecnologías más populares</li>
+    <li><strong>Empleos</strong>: Alto demanda en el mercado laboral</li>
+</ul>
+
+<h3>Recursos de aprendizaje:</h3>
+<ul>
+    <li><strong>Documentación oficial</strong>: docs.python.org - tutorial completo y referencia</li>
+    <li><strong>PyPI</strong>: pypi.org - repositorio oficial de paquetes</li>
+    <li><strong>Python.org</strong>: Sitio oficial con tutoriales para principiantes</li>
+    <li><strong>Real Python</strong>: Tutoriales avanzados y artículos detallados</li>
+    <li><strong>Python Weekly</strong>: Newsletter semanal con noticias</li>
+    <li><strong>Stack Overflow</strong>: Comunidad de Q&A más grande</li>
+    <li><strong>Reddit r/Python</strong>: Comunidad activa de discusión</li>
+    <li><strong>Python Tutor</strong>: Visualizador de ejecución de código</li>
+</ul>
+
+<h3>Conferencias y eventos:</h3>
+<ul>
+    <li><strong>PyCon US</strong>: Conferencia mundial más grande de Python</li>
+    <li><strong>EuroPython</strong>: Conferencia europea principal</li>
+    <li><strong>PyCon APAC</strong>: Conferencia para Asia-Pacífico</li>
+    <li><strong>PyLadies</strong>: Comunidad internacional de mujeres en Python</li>
+    <li><strong>Local Python meetups</strong>: Eventos presenciales en ciudades</li>
+    <li><strong>Django conferences</strong>: Específicas para el framework web</li>
+    <li><strong>SciPy conference</strong>: Enfocada en Python científico</li>
+</ul>
+
+<h3>Organizaciones importantes:</h3>
+<ul>
+    <li><strong>Python Software Foundation (PSF)</strong>: Organización sin fines de lucro</li>
+    <li><strong>Python Steering Council</strong>: Gobierno técnico del lenguaje</li>
+    <li><strong>Django Software Foundation</strong>: Mantiene el framework Django</li>
+    <li><strong>NumFOCUS</strong>: Apoya proyectos científicos de código abierto</li>
+</ul>
+
+<h2>Python en el Mercado Laboral</h2>
+
+<h3>Demanda profesional:</h3>
+<ul>
+    <li><strong>Data Scientist</strong>: Análisis de datos, machine learning, estadística</li>
+    <li><strong>Backend Developer</strong>: APIs, microservicios, sistemas web</li>
+    <li><strong>DevOps Engineer</strong>: Automatización, infraestructura como código</li>
+    <li><strong>Machine Learning Engineer</strong>: Implementación de modelos de IA</li>
+    <li><strong>Full Stack Developer</strong>: Desarrollo completo con Python backend</li>
+    <li><strong>Research Scientist</strong>: Investigación académica y corporativa</li>
+    <li><strong>Quality Assurance</strong>: Automatización de pruebas</li>
+    <li><strong>Financial Analyst</strong>: Análisis cuantitativo en finanzas</li>
+</ul>
+
+<h3>Salarios promedio (USD):</h3>
+<ul>
+    <li><strong>Junior Developer</strong>: $60,000 - $80,000</li>
+    <li><strong>Mid-level Developer</strong>: $80,000 - $120,000</li>
+    <li><strong>Senior Developer</strong>: $120,000 - $180,000</li>
+    <li><strong>Data Scientist</strong>: $95,000 - $165,000</li>
+    <li><strong>Machine Learning Engineer</strong>: $130,000 - $200,000</li>
+    <li><strong>Tech Lead</strong>: $150,000 - $250,000</li>
+</ul>
+
+<h2>El Futuro de Python</h2>
+
+<h3>Tendencias actuales:</h3>
+<ul>
+    <li><strong>Inteligencia Artificial</strong>: Dominancia en ML, deep learning y AI research</li>
+    <li><strong>Computación cuántica</strong>: Frameworks como Qiskit de IBM</li>
+    <li><strong>Edge computing</strong>: MicroPython para dispositivos IoT</li>
+    <li><strong>Blockchain</strong>: Desarrollo de DApps y smart contracts</li>
+    <li><strong>Automatización empresarial</strong>: RPA y procesos de negocio</li>
+    <li><strong>Cloud computing</strong>: Integración nativa con AWS, Azure, GCP</li>
+</ul>
+
+<h3>Mejoras técnicas en desarrollo:</h3>
+<ul>
+    <li><strong>Rendimiento</strong>: Proyecto para eliminar el GIL</li>
+    <li><strong>Type hints</strong>: Tipado estático opcional más robusto</li>
+    <li><strong>Compilación JIT</strong>: PyPy y otros compiladores alternativos</li>
+    <li><strong>WASM</strong>: Ejecución de Python en navegadores web</li>
+    <li><strong>Mobile development</strong>: Frameworks como BeeWare y Kivy</li>
+</ul>
+
+<h3>Adopción industrial:</h3>
+<ul>
+    <li><strong>Fintech</strong>: Trading algorítmico, análisis de riesgo</li>
+    <li><strong>Healthcare</strong>: Análisis de datos médicos, bioinformática</li>
+    <li><strong>Automotive</strong>: Vehículos autónomos, telemática</li>
+    <li><strong>Entertainment</strong>: Efectos visuales, análisis de contenido</li>
+    <li><strong>Government</strong>: Análisis de políticas públicas, smart cities</li>
+</ul>
+
+<h2>Conclusión</h2>
+
+<p>Python se ha establecido como uno de los lenguajes de programación más importantes y versátiles del mundo moderno. Esta versatilidad, junto con su facilidad para los principiantes, lo ha convertido en uno de los lenguajes más populares tanto para aprender programación como para desarrollo profesional.</p>
+
+<p>Su sintaxis clara y legible, comunidad activa de millones de desarrolladores, y amplio ecosistema de más de 400,000 bibliotecas lo consolidan como una herramienta fundamental en prácticamente todos los sectores de la tecnología. Desde startups hasta corporaciones multinacionales, desde investigación académica hasta productos comerciales, Python ha demostrado su valor en aplicaciones críticas.</p>
+
+<p>Las continuas mejoras en rendimiento, las nuevas características del lenguaje, y su adopción creciente en áreas emergentes como inteligencia artificial, computación cuántica, blockchain e IoT, aseguran que Python mantendrá su relevancia en el futuro. Para desarrolladores que buscan un lenguaje potente, versátil y con excelentes oportunidades profesionales, Python representa una inversión sólida en su carrera tecnológica.</p>
+        <section class="cont-mg">
+          <img
+            class="mg"
+            src=""
+            alt="Lenguaje de programación"
+          />
+        </section>
+        <button class="btn-inicio" onclick="window.scrollTo(0, 0);">
+          Volver al inicio
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

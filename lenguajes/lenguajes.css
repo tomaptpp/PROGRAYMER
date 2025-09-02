@@ -1,0 +1,292 @@
+/* ============================
+   RESET Y CONFIGURACIÓN GLOBAL
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ============================
+   BARRA DE NAVEGACIÓN (HEADER)
+   ============================ */
+header {
+  background-color:rgb(13, 102, 235);  /* Color oscuro elegante */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* Soporta adaptación en pantallas pequeñas */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Menú de navegación */
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color:rgb(13, 102, 235);
+    font-size: 20px;
+    margin-top: 0px;
+}
+.nav-links{
+    list-style:none ;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links >li> a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    }
+.nav-links>li:hover{
+    background-color:grey
+}
+.menu-ver{
+    align-content: center;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 180px;
+    background-color:gray;
+} 
+.nav-links>li:hover .menu-ver{
+    display: block;
+}
+.menu-ver>li:hover{
+    background-color: rgb(0, 0, 0)
+}
+.menu-ver li a{
+    display: block;
+    color: white;
+    padding: 10px 1px 10px 10px;
+    text-decoration: none;
+}
+/* ============================
+   CONTENEDOR PRINCIPAL
+   ============================ */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+
+}
+
+/* ============================
+   SECCIÓN DE TEXTO PRINCIPAL
+   ============================ */
+.text {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra suave */
+  margin-bottom: 30px;
+  width: 100%;
+
+}
+
+.text p {
+  margin-bottom: 15px;
+}
+.text1 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra suave */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.text1 p {
+  margin-bottom: 15px;
+}
+.text2 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra suave */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.text2 p {
+  margin-bottom: 15px;
+}
+.text3 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra suave */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.text3 p {
+  margin-bottom: 15px;
+}
+.text4 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra suave */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.text4 p {
+  margin-bottom: 15px;
+}
+.text5 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra suave */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.text5 p {
+  margin-bottom: 15px;
+}
+
+/* Botón de volver al inicio */
+.btn-inicio {
+  background-color:rgb(13, 102, 235);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-inicio:hover {
+  background-color: rgb(10, 82, 188);
+}
+
+/* ============================
+   SECCIÓN DE IMAGEN
+   ============================ */
+.cont-mg {
+  text-align: center;
+  width: 100%;
+} 
+
+.mg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px blueviolet;
+  margin-top: 15px;
+}
+
+.cont-mg1 {
+  text-align: center;
+  width: 100%;
+}
+
+.mg1 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px blueviolet;
+  margin-top: 15px;
+
+}
+
+.cont-mg2 {
+  text-align: center;
+  width: 100%;
+}
+
+.mg2 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px blueviolet;
+  margin-top: 15px;
+
+}
+
+.cont-mg3 {
+  text-align: center;
+  width: 100%;
+}
+
+.mg3 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px blueviolet;
+}
+
+.cont-mg4 {
+  text-align: center;
+  width: 100%;
+}
+
+.mg4 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px blueviolet;
+}
+
+.cont-mg5 {
+  text-align: center;
+  width: 100%;
+}
+
+.mg5 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px blueviolet;
+}
+
+/* ============================
+   RESPONSIVE DESIGN (móviles)
+   ============================ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    display: block;
+    width:100%;
+  }
+}
+.py{
+  margin-left: 50px;
+}
+.hhhh{
+  margin-left: 50px;  
+}
+.psiii{
+  margin-top: 10px;
+}

@@ -1,0 +1,161 @@
+/* ============================
+   RESET Y CONFIGURACIÓN GLOBAL
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+  background-color: #000000ce;
+  color: #ffffff;
+  line-height: 1.6;
+
+}
+
+/* ============================
+   BARRA DE NAVEGACIÓN (HEADER)
+   ============================ */
+header {
+  background-color:rgb(0, 0, 0);  /* Color oscuro elegante */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* Soporta adaptación en pantallas pequeñas */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.logo:hover{ 
+  color:#615c5c85;
+}
+
+/* Menú de navegación */
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 0px;
+}
+.nav-links{
+    list-style:none ;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links >li> a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    }
+.nav-links>li:hover{
+    background-color:rgb(24, 23, 23)
+}
+.menu-ver{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color:rgb(0, 0, 0);
+} 
+.nav-links>li:hover .menu-ver{
+    display: block;
+}
+.menu-ver>li:hover{
+    background-color: rgb(24, 23, 23)
+}
+.menu-ver li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+/* ============================
+   CONTENEDOR PRINCIPAL
+   ============================ */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ============================
+   SECCIÓN DE TEXTO PRINCIPAL
+   ============================ */
+.text {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.842);  /* Sombra suave */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.text p {
+  margin-bottom: 15px;
+}
+
+/* Botón de volver al inicio */
+.btn-inicio {
+  background-color:rgb(95, 0, 184);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-inicio:hover {
+  background-color:rgb(27, 0, 53) ;
+}
+
+/* ============================
+   SECCIÓN DE IMAGEN
+   ============================ */
+.cont-mg {
+  text-align: center;
+  width: 100%;
+}
+
+.mg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ============================
+   RESPONSIVE DESIGN (móviles)
+   ============================ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    display: block;
+    width:100%;
+  }
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROGRAYMER</title>
+    <link rel="stylesheet" href="HTML.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación superior -->
+    <header>
+      <div><a href="../index/index.html" class="logo">PROGRAYMER</a></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index/index.html">Inicio</a></li>
+        <li><a href="../contenidorec/contenido.html">Contenido recomendado</a></li>
+        <li><a>Lenguajes</a>
+          <ul class="menu-ver">
+            <li><a href="../lenguajes/PSeint.html">PSeint</a></li>
+            <li><a href="../lenguajes/Python.html">Python</a></li>
+            <li><a href="../lenguajes/HTML.html">HTML</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="">Comunidad</a>
+          <ul class="menu-ver">
+            <li><a href="">Codigos Comunidad</a></li>
+          </ul>
+        </li>
+        <li><a href="">Inicio Sesion</a></li>
+
+      </ul>
+    </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenedor">
+      <section class="text">
+        <h1>HTML: Guía Completa del Lenguaje de Marcado</h1>
+
+<h2>¿Qué es HTML?</h2>
+<p><strong>HTML</strong> (HyperText Markup Language - Lenguaje de Marcado de Hipertexto) <cite>es el código que se utiliza para estructurar y desplegar una página web y sus contenidos</cite>. <cite>No es propiamente un lenguaje de programación, sino de marcación, diseñado para estructurar páginas web mediante etiquetas</cite>.</p>
+
+<p><cite>HTML es un lenguaje de marcado que posibilita definir la estructura de nuestro documento mediante etiquetas. Este lenguaje ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpretar tanto por humanos como por máquinas</cite>.</p>
+
+<p><cite>"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí</cite>, permitiendo la navegación no lineal a través del contenido web. <cite>Define el significado y la estructura del contenido web</cite>.</p>
+
+<h2>Características Principales de HTML</h2>
+
+<h3>Características técnicas:</h3>
+<ul>
+    <li><strong>Lenguaje de marcado</strong>: Utiliza etiquetas para estructurar contenido</li>
+    <li><strong>Basado en texto</strong>: Los archivos HTML son documentos de texto plano</li>
+    <li><strong>Estándar abierto</strong>: Mantenido por el W3C (World Wide Web Consortium)</li>
+    <li><strong>Multiplataforma</strong>: Funciona en cualquier navegador y sistema operativo</li>
+    <li><strong>Extensible</strong>: Se puede combinar con CSS y JavaScript</li>
+    <li><strong>Semántico</strong>: Las etiquetas tienen significado específico</li>
+    <li><strong>Jerárquico</strong>: Estructura en forma de árbol con elementos anidados</li>
+</ul>
+
+<h3>Filosofía del lenguaje:</h3>
+<p>HTML sigue principios fundamentales de diseño web:</p>
+<ul>
+    <li><strong>Separación de contenido y presentación</strong>: HTML para estructura, CSS para estilo</li>
+    <li><strong>Accesibilidad</strong>: Contenido accesible para todos los usuarios</li>
+    <li><strong>Semántica</strong>: Cada etiqueta tiene un propósito específico</li>
+    <li><strong>Compatibilidad hacia atrás</strong>: Las versiones anteriores siguen funcionando</li>
+    <li><strong>Progresive enhancement</strong>: Funcionalidad básica mejorada gradualmente</li>
+</ul>
+
+<h2>¿Para qué sirve HTML?</h2>
+
+<p><cite>Es un lenguaje de marcado estándar para la creación de páginas web. Permite construir y estructurar secciones, párrafos y enlaces utilizando elementos HTML (los bloques de construcción de una página web) como etiquetas y atributos</cite>.</p>
+
+<h3>Principales aplicaciones:</h3>
+<ul>
+    <li><strong>Páginas web estáticas</strong>: Sitios informativos, blogs, portafolios</li>
+    <li><strong>Aplicaciones web</strong>: Base estructural para aplicaciones complejas</li>
+    <li><strong>Correos electrónicos</strong>: Formateo de newsletters y emails HTML</li>
+    <li><strong>Documentación</strong>: Manuales técnicos y guías en línea</li>
+    <li><strong>Landing pages</strong>: Páginas de destino para marketing</li>
+    <li><strong>E-commerce</strong>: Tiendas en línea y catálogos</li>
+    <li><strong>Formularios web</strong>: Captura de datos de usuarios</li>
+    <li><strong>PWAs</strong>: Progressive Web Applications</li>
+    <li><strong>Plantillas</strong>: Templates para CMS y frameworks</li>
+    <li><strong>Prototipos</strong>: Mockups y wireframes interactivos</li>
+</ul>
+
+<h2>Estructura y Sintaxis de HTML</h2>
+
+<h3>Documento HTML básico:</h3>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Mi Primera Página Web&lt;/title&gt;
+    &lt;meta name="description" content="Descripción de la página"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Bienvenido a mi sitio web&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#acerca"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;section id="inicio"&gt;
+            &lt;h2&gt;Inicio&lt;/h2&gt;
+            &lt;p&gt;Este es el contenido principal de la página.&lt;/p&gt;
+            &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+        &lt;/section&gt;
+        
+        &lt;section id="acerca"&gt;
+            &lt;h2&gt;Acerca de nosotros&lt;/h2&gt;
+            &lt;article&gt;
+                &lt;h3&gt;Nuestra historia&lt;/h3&gt;
+                &lt;p&gt;Contenido del artículo...&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    
+    &lt;aside&gt;
+        &lt;h3&gt;Barra lateral&lt;/h3&gt;
+        &lt;p&gt;Contenido adicional&lt;/p&gt;
+    &lt;/aside&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 Mi Sitio Web. Todos los derechos reservados.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<h3>Componentes principales de HTML:</h3>
+<ul>
+    <li><strong>DOCTYPE</strong>: Declara la versión de HTML</li>
+    <li><strong>Elemento html</strong>: Contenedor raíz de todo el documento</li>
+    <li><strong>Head</strong>: Metadatos, título, enlaces a CSS y scripts</li>
+    <li><strong>Body</strong>: Contenido visible de la página</li>
+    <li><strong>Etiquetas</strong>: Elementos que marcan el contenido</li>
+    <li><strong>Atributos</strong>: Propiedades adicionales de las etiquetas</li>
+    <li><strong>Contenido</strong>: Texto, imágenes y otros medios</li>
+</ul>
+
+<h2>Etiquetas HTML Fundamentales</h2>
+
+<h3>Etiquetas de estructura:</h3>
+<ul>
+    <li><strong>&lt;html&gt;</strong>: Elemento raíz del documento</li>
+    <li><strong>&lt;head&gt;</strong>: Información meta del documento</li>
+    <li><strong>&lt;body&gt;</strong>: Contenido visible de la página</li>
+    <li><strong>&lt;header&gt;</strong>: Encabezado de página o sección</li>
+    <li><strong>&lt;nav&gt;</strong>: Menú de navegación</li>
+    <li><strong>&lt;main&gt;</strong>: Contenido principal</li>
+    <li><strong>&lt;section&gt;</strong>: Sección de contenido</li>
+    <li><strong>&lt;article&gt;</strong>: Contenido independiente</li>
+    <li><strong>&lt;aside&gt;</strong>: Contenido lateral</li>
+    <li><strong>&lt;footer&gt;</strong>: Pie de página</li>
+</ul>
+
+<h3>Etiquetas de contenido:</h3>
+<ul>
+    <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong>: Encabezados jerárquicos</li>
+    <li><strong>&lt;p&gt;</strong>: Párrafos de texto</li>
+    <li><strong>&lt;a&gt;</strong>: Enlaces a otras páginas o recursos</li>
+    <li><strong>&lt;img&gt;</strong>: Imágenes</li>
+    <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong>: Listas no ordenadas, ordenadas e ítems</li>
+    <li><strong>&lt;div&gt;</strong>: Contenedor genérico de bloque</li>
+    <li><strong>&lt;span&gt;</strong>: Contenedor genérico en línea</li>
+    <li><strong>&lt;br&gt;</strong>: Salto de línea</li>
+    <li><strong>&lt;hr&gt;</strong>: Línea horizontal</li>
+</ul>
+
+<h3>Etiquetas de formato de texto:</h3>
+<ul>
+    <li><strong>&lt;strong&gt;</strong>: Texto importante (negrita semántica)</li>
+    <li><strong>&lt;em&gt;</strong>: Texto enfatizado (cursiva semántica)</li>
+    <li><strong>&lt;b&gt;</strong>: Texto en negrita (presentacional)</li>
+    <li><strong>&lt;i&gt;</strong>: Texto en cursiva (presentacional)</li>
+    <li><strong>&lt;u&gt;</strong>: Texto subrayado</li>
+    <li><strong>&lt;mark&gt;</strong>: Texto resaltado</li>
+    <li><strong>&lt;small&gt;</strong>: Texto pequeño</li>
+    <li><strong>&lt;sub&gt;</strong>: Subíndice</li>
+    <li><strong>&lt;sup&gt;</strong>: Superíndice</li>
+</ul>
+
+<h3>Etiquetas de formularios:</h3>
+<ul>
+    <li><strong>&lt;form&gt;</strong>: Formulario de datos</li>
+    <li><strong>&lt;input&gt;</strong>: Campo de entrada</li>
+    <li><strong>&lt;textarea&gt;</strong>: Área de texto multilínea</li>
+    <li><strong>&lt;select&gt;</strong>: Lista desplegable</li>
+    <li><strong>&lt;option&gt;</strong>: Opción de lista</li>
+    <li><strong>&lt;button&gt;</strong>: Botón interactivo</li>
+    <li><strong>&lt;label&gt;</strong>: Etiqueta para campos de formulario</li>
+    <li><strong>&lt;fieldset&gt;</strong>: Agrupación de campos</li>
+    <li><strong>&lt;legend&gt;</strong>: Título para fieldset</li>
+</ul>
+
+<h3>Etiquetas multimedia:</h3>
+<ul>
+    <li><strong>&lt;img&gt;</strong>: Imágenes estáticas</li>
+    <li><strong>&lt;video&gt;</strong>: Contenido de video</li>
+    <li><strong>&lt;audio&gt;</strong>: Contenido de audio</li>
+    <li><strong>&lt;source&gt;</strong>: Fuentes multimedia alternativas</li>
+    <li><strong>&lt;iframe&gt;</strong>: Marco incrustado</li>
+    <li><strong>&lt;embed&gt;</strong>: Contenido incrustado</li>
+    <li><strong>&lt;object&gt;</strong>: Objeto multimedia</li>
+</ul>
+
+<h2>Uso Profesional de HTML</h2>
+
+<h3>En desarrollo web frontend:</h3>
+<p>HTML forma la base estructural de todas las páginas web modernas. Los desarrolladores frontend lo combinan con CSS para el diseño visual y JavaScript para la interactividad, creando experiencias web completas y atractivas.</p>
+
+<h3>En desarrollo web backend:</h3>
+<p>Los desarrolladores backend generan HTML dinámicamente utilizando lenguajes como PHP, Python, Node.js, o frameworks como Django, Laravel, Express, para crear páginas web que se adaptan al contenido de bases de datos.</p>
+
+<h3>En marketing digital:</h3>
+<p>Los especialistas en marketing utilizan HTML para crear landing pages optimizadas, emails newsletters, y páginas de conversión que maximizan las tasas de conversión y el engagement del usuario.</p>
+
+<h3>En diseño UX/UI:</h3>
+<p>Los diseñadores usan HTML para crear prototipos interactivos, wireframes funcionales y mockups que permiten probar la experiencia de usuario antes del desarrollo completo.</p>
+
+<h3>En SEO (Search Engine Optimization):</h3>
+<p>HTML semántico es fundamental para el posicionamiento en buscadores. Las etiquetas apropiadas, meta descripciones, structured data y markup semántico mejoran la visibilidad en Google y otros motores de búsqueda.</p>
+
+<h3>En desarrollo de aplicaciones:</h3>
+<p>Frameworks modernos como React, Vue.js, Angular utilizan JSX o templates basados en HTML para crear interfaces de usuario dinámicas en aplicaciones web complejas.</p>
+
+<h2>Herramientas y Tecnologías Relacionadas</h2>
+
+<h3>Editores de código:</h3>
+<ul>
+    <li><strong>Visual Studio Code</strong>: Editor más popular con extensiones HTML</li>
+    <li><strong>Sublime Text</strong>: Editor ligero con plugins HTML</li>
+    <li><strong>Atom</strong>: Editor de código abierto</li>
+    <li><strong>WebStorm</strong>: IDE profesional de JetBrains</li>
+    <li><strong>Brackets</strong>: Editor especializado en desarrollo web</li>
+    <li><strong>Notepad++</strong>: Editor básico para Windows</li>
+    <li><strong>Vim/Neovim</strong>: Editor de terminal avanzado</li>
+</ul>
+
+<h3>Frameworks y bibliotecas:</h3>
+<ul>
+    <li><strong>Bootstrap</strong>: Framework CSS con componentes HTML</li>
+    <li><strong>Foundation</strong>: Framework responsive</li>
+    <li><strong>Bulma</strong>: Framework CSS moderno</li>
+    <li><strong>Semantic UI</strong>: Framework con naming intuitivo</li>
+    <li><strong>Materialize</strong>: Basado en Material Design</li>
+    <li><strong>Tailwind CSS</strong>: Framework utility-first</li>
+</ul>
+
+<h3>Preprocesadores y build tools:</h3>
+<ul>
+    <li><strong>Sass/SCSS</strong>: Preprocesador CSS</li>
+    <li><strong>Less</strong>: Preprocesador CSS alternativo</li>
+    <li><strong>Webpack</strong>: Bundler de módulos</li>
+    <li><strong>Gulp</strong>: Task runner para automatización</li>
+    <li><strong>Grunt</strong>: Task runner alternativo</li>
+    <li><strong>Parcel</strong>: Bundler zero-configuration</li>
+</ul>
+
+<h3>Herramientas de validación:</h3>
+<ul>
+    <li><strong>W3C Markup Validator</strong>: Validador oficial de HTML</li>
+    <li><strong>HTML5 Validator</strong>: Específico para HTML5</li>
+    <li><strong>WAVE</strong>: Evaluador de accesibilidad web</li>
+    <li><strong>Lighthouse</strong>: Auditoría de calidad de Google</li>
+    <li><strong>axe DevTools</strong>: Testing de accesibilidad</li>
+</ul>
+
+<h2>Versiones de HTML</h2>
+
+<h3>Historia de versiones:</h3>
+<ul>
+    <li><strong>HTML 1.0 (1993)</strong>: Primera versión básica</li>
+    <li><strong>HTML 2.0 (1995)</strong>: Primera especificación estándar</li>
+    <li><strong>HTML 3.2 (1997)</strong>: Añadió tablas, applets, scripts</li>
+    <li><strong>HTML 4.0 (1997)</strong>: Introdujo hojas de estilo</li>
+    <li><strong>HTML 4.01 (1999)</strong>: Versión refinada y estable</li>
+    <li><strong>XHTML 1.0 (2000)</strong>: HTML reformulado como XML</li>
+    <li><strong>XHTML 1.1 (2001)</strong>: Modularización de XHTML</li>
+    <li><strong>HTML5 (2014)</strong>: Versión actual con nuevas características</li>
+</ul>
+
+<h3>HTML5 - Características principales:</h3>
+<ul>
+    <li><strong>Elementos semánticos</strong>: header, nav, main, section, article, aside, footer</li>
+    <li><strong>APIs nativas</strong>: Geolocation, Local Storage, Canvas, Web Workers</li>
+    <li><strong>Multimedia nativa</strong>: video, audio sin plugins</li>
+    <li><strong>Formularios mejorados</strong>: Nuevos tipos de input y validación</li>
+    <li><strong>Gráficos</strong>: Canvas 2D, SVG integrado</li>
+    <li><strong>Offline support</strong>: Application Cache, Service Workers</li>
+    <li><strong>Responsive design</strong>: Meta viewport, picture element</li>
+</ul>
+
+<h3>Evolución continua:</h3>
+<ul>
+    <li><strong>Living Standard</strong>: HTML evoluciona continuamente</li>
+    <li><strong>WHATWG</strong>: Web Hypertext Application Technology Working Group</li>
+    <li><strong>W3C</strong>: World Wide Web Consortium</li>
+    <li><strong>Nuevas características</strong>: Web Components, Progressive Web Apps</li>
+</ul>
+
+<h2>Ventajas de HTML</h2>
+
+<h3>Para desarrolladores:</h3>
+<ul>
+    <li><strong>Fácil de aprender</strong>: Sintaxis simple y lógica</li>
+    <li><strong>Estándar universal</strong>: Funciona en todos los navegadores</li>
+    <li><strong>Código abierto</strong>: Especificaciones públicas y gratuitas</li>
+    <li><strong>Herramientas abundantes</strong>: Editores, validadores, frameworks</li>
+    <li><strong>Comunidad activa</strong>: Documentación extensa y soporte</li>
+    <li><strong>Flexibilidad</strong>: Se adapta a proyectos simples y complejos</li>
+    <li><strong>SEO friendly</strong>: Estructura semántica para buscadores</li>
+    <li><strong>Accesibilidad</strong>: Soporte nativo para tecnologías asistivas</li>
+</ul>
+
+<h3>Para empresas:</h3>
+<ul>
+    <li><strong>Costo bajo</strong>: Sin licencias ni costos de tecnología</li>
+    <li><strong>Mantenimiento simple</strong>: Código legible y estándar</li>
+    <li><strong>Escalabilidad</strong>: Desde sitios simples hasta aplicaciones complejas</li>
+    <li><strong>Compatibilidad</strong>: Funciona en todos los dispositivos</li>
+    <li><strong>Velocidad de desarrollo</strong>: Prototipado rápido</li>
+    <li><strong>Talento disponible</strong>: Muchos desarrolladores conocen HTML</li>
+    <li><strong>Futuro asegurado</strong>: Estándar web fundamental</li>
+</ul>
+
+<h3>Para usuarios finales:</h3>
+<ul>
+    <li><strong>Accesibilidad universal</strong>: Contenido accesible para discapacidades</li>
+    <li><strong>Velocidad de carga</strong>: HTML bien estructurado carga rápido</li>
+    <li><strong>Compatibilidad</strong>: Funciona en cualquier dispositivo</li>
+    <li><strong>SEO beneficios</strong>: Mejor encontrabilidad en buscadores</li>
+    <li><strong>Offline capability</strong>: Algunas funciones trabajan sin internet</li>
+</ul>
+
+<h2>Limitaciones de HTML</h2>
+
+<h3>Limitaciones técnicas:</h3>
+<ul>
+    <li><strong>Solo estructura</strong>: No maneja estilos ni interactividad por sí solo</li>
+    <li><strong>Páginas estáticas</strong>: Sin HTML puro no hay contenido dinámico</li>
+    <li><strong>Limitaciones de diseño</strong>: Capacidades visuales básicas sin CSS</li>
+    <li><strong>Sin lógica de programación</strong>: No puede realizar cálculos o procesamiento</li>
+    <li><strong>Seguridad limitada</strong>: Vulnerable a ataques XSS sin precauciones</li>
+    <li><strong>No maneja datos</strong>: Sin conexión directa a bases de datos</li>
+</ul>
+
+<h3>Desafíos de desarrollo:</h3>
+<ul>
+    <li><strong>Compatibilidad entre navegadores</strong>: Diferencias en implementación</li>
+    <li><strong>Mantenimiento de código</strong>: HTML repetitivo puede ser difícil de mantener</li>
+    <li><strong>Responsive design</strong>: Requiere CSS adicional para adaptabilidad</li>
+    <li><strong>Performance</strong>: HTML mal estructurado puede afectar velocidad</li>
+    <li><strong>Accesibilidad</strong>: Requiere conocimiento específico para implementar correctamente</li>
+</ul>
+
+<h3>Casos donde se necesitan otras tecnologías:</h3>
+<ul>
+    <li><strong>Aplicaciones dinámicas</strong>: JavaScript para interactividad</li>
+    <li><strong>Diseño visual</strong>: CSS para estilos y layouts</li>
+    <li><strong>Backends</strong>: PHP, Python, Node.js para lógica de servidor</li>
+    <li><strong>Bases de datos</strong>: MySQL, PostgreSQL para almacenamiento</li>
+    <li><strong>Aplicaciones móviles</strong>: Swift, Kotlin para apps nativas</li>
+</ul>
+
+<h2>Mejores Prácticas de HTML</h2>
+
+<h3>Escritura de código:</h3>
+<ul>
+    <li><strong>HTML semántico</strong>: Usar etiquetas según su propósito</li>
+    <li><strong>Indentación consistente</strong>: Código legible y organizado</li>
+    <li><strong>Atributos alt</strong>: Describir imágenes para accesibilidad</li>
+    <li><strong>Validación</strong>: Usar validadores W3C regularmente</li>
+    <li><strong>Minificación</strong>: Comprimir HTML para producción</li>
+    <li><strong>Comentarios útiles</strong>: Documentar secciones complejas</li>
+</ul>
+
+<h3>SEO y rendimiento:</h3>
+<ul>
+    <li><strong>Meta tags</strong>: Título, descripción, keywords apropiados</li>
+    <li><strong>Estructura jerárquica</strong>: h1-h6 en orden lógico</li>
+    <li><strong>URLs amigables</strong>: Nombres de archivo descriptivos</li>
+    <li><strong>Schema markup</strong>: Structured data para buscadores</li>
+    <li><strong>Optimización de imágenes</strong>: Tamaños y formatos apropiados</li>
+    <li><strong>Lazy loading</strong>: Carga diferida de recursos</li>
+</ul>
+
+<h3>Accesibilidad:</h3>
+<ul>
+    <li><strong>ARIA labels</strong>: Etiquetas para screen readers</li>
+    <li><strong>Contraste adecuado</strong>: Colores legibles</li>
+    <li><strong>Navegación por teclado</strong>: Accesible sin mouse</li>
+    <li><strong>Texto alternativo</strong>: Descripción de contenido visual</li>
+    <li><strong>Estructura lógica</strong>: Orden de lectura coherente</li>
+</ul>
+
+<h2>HTML en el Mercado Laboral</h2>
+
+<h3>Demanda profesional:</h3>
+<ul>
+    <li><strong>Frontend Developer</strong>: HTML como skill fundamental</li>
+    <li><strong>Web Designer</strong>: Conocimiento de HTML para implementación</li>
+    <li><strong>Full Stack Developer</strong>: HTML en el stack completo</li>
+    <li><strong>Email Marketing Specialist</strong>: HTML para newsletters</li>
+    <li><strong>SEO Specialist</strong>: HTML semántico para optimización</li>
+    <li><strong>UX/UI Designer</strong>: Prototipos funcionales en HTML</li>
+    <li><strong>Content Manager</strong>: Edición directa de contenido HTML</li>
+    <li><strong>WordPress Developer</strong>: Customización de themes</li>
+</ul>
+
+<h3>Combinaciones de skills valoradas:</h3>
+<ul>
+    <li><strong>HTML + CSS + JavaScript</strong>: Trinity del frontend</li>
+    <li><strong>HTML + React/Vue/Angular</strong>: Frameworks modernos</li>
+    <li><strong>HTML + PHP/Python/Node.js</strong>: Desarrollo full stack</li>
+    <li><strong>HTML + SEO + Analytics</strong>: Marketing digital</li>
+    <li><strong>HTML + Accessibility</strong>: Desarrollo inclusivo</li>
+    <li><strong>HTML + Email Marketing</strong>: Especialización en newsletters</li>
+</ul>
+
+<h3>Niveles salariales (HTML como parte del skillset):</h3>
+<ul>
+    <li><strong>Junior Frontend Developer</strong>: $35,000 - $55,000</li>
+    <li><strong>Mid-level Frontend Developer</strong>: $55,000 - $85,000</li>
+    <li><strong>Senior Frontend Developer</strong>: $85,000 - $130,000</li>
+    <li><strong>Full Stack Developer</strong>: $70,000 - $120,000</li>
+    <li><strong>Web Designer with coding</strong>: $45,000 - $75,000</li>
+    <li><strong>Email Developer</strong>: $50,000 - $80,000</li>
+</ul>
+
+<h2>El Futuro de HTML</h2>
+
+<h3>Tendencias actuales:</h3>
+<ul>
+    <li><strong>Web Components</strong>: Elementos personalizados reutilizables</li>
+    <li><strong>Progressive Web Apps</strong>: Aplicaciones web que funcionan como nativas</li>
+    <li><strong>JAMstack</strong>: JavaScript, APIs, y Markup estático</li>
+    <li><strong>Headless CMS</strong>: Separación completa de frontend y backend</li>
+    <li><strong>Server-Side Rendering</strong>: HTML generado en servidor para performance</li>
+    <li><strong>Static Site Generators</strong>: Gatsby, Next.js, Nuxt.js</li>
+</ul>
+
+<h3>Nuevas características en desarrollo:</h3>
+<ul>
+    <li><strong>Container queries</strong>: CSS responsive basado en contenedores</li>
+    <li><strong>Import maps</strong>: Gestión de módulos ES6</li>
+    <li><strong>Declarative Shadow DOM</strong>: Web Components server-side</li>
+    <li><strong>CSS Houdini</strong>: APIs de bajo nivel para CSS</li>
+    <li><strong>WebAssembly</strong>: Código nativo en navegadores</li>
+</ul>
+
+<h3>Integración con tecnologías emergentes:</h3>
+<ul>
+    <li><strong>Inteligencia Artificial</strong>: Generación automática de HTML</li>
+    <li><strong>Realidad Virtual/Aumentada</strong>: WebXR y HTML para experiencias inmersivas</li>
+    <li><strong>IoT</strong>: Interfaces web para dispositivos conectados</li>
+    <li><strong>Blockchain</strong>: DApps con interfaces HTML</li>
+    <li><strong>Edge Computing</strong>: HTML optimizado para CDNs</li>
+</ul>
+
+<h2>Recursos de Aprendizaje</h2>
+
+<h3>Documentación oficial:</h3>
+<ul>
+    <li><strong>MDN Web Docs</strong>: Referencia más completa de HTML</li>
+    <li><strong>W3C HTML Specification</strong>: Especificación técnica oficial</li>
+    <li><strong>WHATWG HTML Living Standard</strong>: Estándar en evolución</li>
+    <li><strong>W3Schools</strong>: Tutoriales básicos e interactivos</li>
+</ul>
+
+<h3>Plataformas de aprendizaje:</h3>
+<ul>
+    <li><strong>freeCodeCamp</strong>: Curso completo gratuito</li>
+    <li><strong>Codeca
+        <section class="cont-mg">
+          <img
+            class="mg"
+            src=""
+            alt="Lenguaje de programación"
+          />
+        </section>
+        <button class="btn-inicio" onclick="window.scrollTo(0, 0);">
+          Volver al inicio
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
